@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>ƒTƒ“ƒvƒ‹</title>
+<script type="text/javascript">
+var x = 20;
+var y = 20;
+var r = 10;
+var dx = 20;
+var dy = 20;
+
+function init()
+{
+   var t = window.setInterval("draw()", 100);
+}
+function draw()
+{
+   var c = document.getElementById("canvas");
+   var w = c.width;
+   var h = c.height;
+   var cnt = c.getContext("2d");
+
+   cnt.clearRect(0, 0, w, h);
+   cnt.shadowBlur = 5;
+   cnt.shadowColor = "#000000";
+   cnt.fillStyle = "#990033";
+     
+   cnt.beginPath();
+   cnt.arc(x, y, r, 0, Math.PI*2, false);
+   cnt.closePath();
+   cnt.fill();
+
+   if(x<r || x>w-r) dx = -dx;
+   if(y<r || y>h-r) dy = -dy;
+ 
+   x = x + dx;
+   y = y + dy;
+}
+</script>
+</head>
+<body onload="init()">
+<h1>—V‹Zê</h1>
+<canvas id="canvas" width="300" height="200"></canvas>
+</body>
+</html>

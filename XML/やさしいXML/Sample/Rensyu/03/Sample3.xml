@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="Shift_JIS" ?> 
+
+<!DOCTYPE books[
+  <!ELEMENT books (book+)>
+  <!ELEMENT book  (title, img)>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT img    EMPTY>
+  <!ATTLIST img  file CDATA #IMPLIED>
+]>
+
+<books>
+  <book>
+    <title>やさしいXML</title> 
+    <img file="xml.jpg"/> 
+  </book>
+  <book>
+    <title>やさしいJava</title> 
+    <img file="java.jpg"/>
+  </book>
+</books>

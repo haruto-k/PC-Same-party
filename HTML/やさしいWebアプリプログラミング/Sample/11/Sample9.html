@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>サンプル</title>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false">
+</script>
+<script type="text/javascript">
+var map;
+var cp;
+
+function init()
+{
+   var p =  new google.maps.LatLng(36,140);
+   var opt = {
+      zoom: 8,
+      center: p,
+      mapTypeId: google.maps.MapTypeId.ROADMAP      
+   };
+   var mm = document.getElementById("mymap");
+   map = new google.maps.Map(mm, opt);
+
+  google.maps.event.addListener(map, "click", map_click);
+}
+function map_click(e)
+{
+   var geo = new google.maps.Geocoder();
+     
+   cp = e.latLng;
+   var ltlg = {latLng: cp};
+   geo.geocode(ltlg, getResult)
+}
+function getResult(res, status)
+{
+   if(status == google.maps.GeocoderStatus.OK){
+      if(res[0] != null){
+      map.setCenter(cp);
+      var mp = {
+         map: map,
+         position: cp
+      };
+      var mk = new google.maps.Marker(mp);
+      var ad = document.getElementById("address");
+      ad.innerHTML = res[0].formatted_address;
+      }
+   }
+   else{
+      window.alert("利用できませんでした。");
+   }
+}
+</script>
+</head>
+<body onload="init()">
+<div id="mymap"></div>
+<form name="myform">
+<h3 id="address"></h3>
+</form>
+</body>
+</html>

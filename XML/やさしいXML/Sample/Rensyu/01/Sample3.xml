@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="Shift_JIS" ?> 
+<books>
+  <book>
+    <title>やさしいJava</title> 
+    <page>536</page> 
+    <size>A5</size> 
+  </book>
+  <book>
+    <title>やさしいC++</title> 
+    <page>560</page> 
+    <size>A5</size> 
+  </book>
+  <book>
+    <title>入門SQL</title> 
+    <page>376</page> 
+    <size>B5変</size> 
+  </book>
+</books>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>サンプル</title>
+<script type="text/javascript">
+var num = 0;
+function add()
+{
+   num++;
+   var itm = document.getElementById("shop");
+   var elm = document.createElement("option");
+   var txt = document.createTextNode("商品番号" + num);
+   elm.appendChild(txt); 
+   itm.appendChild(elm);
+}
+</script>
+</head>
+<body>
+<h1>商品の紹介</h1>
+<select multiple id="shop">
+</select>
+<input type="button" value="商品の追加" onclick="add()"/>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+
+<!DOCTYPE cars[
+  <!ELEMENT cars         (car+)>
+  <!ELEMENT car          (name, price, description, img)>
+  <!ELEMENT name         (#PCDATA)>
+  <!ELEMENT price        (#PCDATA)>
+  <!ELEMENT description  (#PCDATA | em)*>
+  <!ELEMENT em           (#PCDATA)>
+  <!ELEMENT img          EMPTY>
+]>
+
+<cars>
+  <car>
+    <name>乗用車</name>
+    <price>150</price>
+    <description>5人まで乗車することができます。<em>家族用</em>の車です。</description>
+    <img/>
+  </car>
+  <car>
+    <name>トラック</name>
+    <price>500</price>
+    <description><em>荷物の運搬</em>にご利用できます。<em>業務用</em>の車です。</description>
+    <img/>
+  </car>
+  <car>
+    <name>オープンカー</name>
+    <price>200</price>
+    <description>晴天時には天窓を開閉できます。<em>レジャー用</em>に最適です。</description>
+    <img/>
+  </car>
+</cars>

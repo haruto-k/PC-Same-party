@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample3.css">
+<title>サンプル</title>
+<script type="text/javascript">
+var dsp;
+function init()
+{
+   var elems = document.getElementsByTagName("p");
+   for(var i=0; i<elems.length; i++){
+      elems[i].className = "before";
+   }
+   dsp = false;
+}
+function display(e)
+{
+   var str;
+   if(dsp == true){
+      str = "before";
+      dsp = false;
+   }
+   else{
+      str = "after";
+      dsp = true; 
+   }
+   var dv = e.parentNode; 
+   var elems = dv.getElementsByTagName("p");
+   for(var i=0; i<elems.length; i++){
+      elems[i].className = str;
+   }
+}
+</script>
+</head>
+<body onload="init()">
+<h1>商品のご紹介</h1>
+<h2>やさしいシリーズ</h2>
+<div>
+<h3 onclick="display(this)">乗用車</h3>
+<p>5人まで乗車することができます。家族用の車です。</p>
+</div>
+<div>
+<h3 onclick="display(this)">トラック</h3>
+<p>荷物の運搬にご利用できます。業務用の車です。</p>
+</div>
+<div>
+<h3 onclick="display(this)">オープンカー</h3>
+<p>晴天時には天窓を開閉できます。レジャー用に最適です。</p>
+</div>
+</body>
+</html>

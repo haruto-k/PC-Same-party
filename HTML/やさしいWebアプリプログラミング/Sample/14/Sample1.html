@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>サンプル</title>
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+function welcome()
+{
+   $("h1").text("商品の紹介");
+
+   $("<h3></h3>").text("乗用車").appendTo("#cars");
+}
+</script>
+</head>
+<body>
+<h1 onclick= "welcome()">店舗案内</h1>
+<div id="cars"></div>
+</body>
+</html>

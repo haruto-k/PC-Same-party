@@ -1,0 +1,13 @@
+body{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: fantasy;
+}
+table{
+   background-color: #66cdaa;
+   border: #FFFFFF 2px solid;
+}
+td{
+   width: 200px;
+   border: #FFFFFF 1px solid;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>サンプル</title>
+</head>
+<body>
+<h1>出発地のご案内</h1>
+<script type="text/javascript">
+var str = [
+        ["東京", "Tokyo", "とうきょう"],
+        ["大阪", "Osaka", "おおさか"],
+        ["名古屋", "Nagoya", "なごや"],
+        ["福岡", "Fukuoka", "ふくおか"]
+];
+
+var tmp = "";
+for (var i = 0; i < 4; i++)
+{
+    tmp += "<h3>" ;
+    for (var j = 0; j < 3; j++)
+    {
+       tmp += str[i][j];
+       tmp += ",";
+    }
+    tmp += "</h3>";
+}
+document.writeln(tmp);
+</script>
+</body>
+</html>

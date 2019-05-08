@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>サンプル</title>
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(init);
+function init()
+{
+   $("h1").click(h1_click);
+   $("h2").click(h2_click);
+   $("h3").click(h3_click);
+}
+function h1_click()
+{
+   $("h2").fadeIn();
+}
+function h2_click()
+{
+   $("h2").fadeOut();
+}
+function h3_click()
+{
+   var prm1 = {
+      width: "+=100px",
+   };
+   var prm2 = {
+      width: "-=100px",
+   };
+
+   $("h3").animate(prm1);
+   $("h3").animate(prm2);
+}
+</script>
+</head>
+<body>
+<h1>商品のご紹介</h1>
+<h2>やさしいシリーズ</h2>
+<h3>乗用車</h3>
+<p>5人まで乗車することができます。家族用の車です。</p>
+<h3>トラック</h3>
+<p>荷物の運搬にご利用できます。業務用の車です。</p>
+<h3>オープンカー</h3>
+<p>晴天時には天窓を開閉できます。レジャー用に最適です。</p>
+</body>
+</html>

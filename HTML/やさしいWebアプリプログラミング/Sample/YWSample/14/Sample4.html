@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>サンプル</title>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+var rq;
+
+function read()
+{
+   var opt = { 
+      url: "Sample.txt",
+      type: "POST",
+      dataType: "text",
+      success: receive,
+      error: err
+   };
+   $.ajax(opt);
+}
+function receive(dat)
+{
+   $("#data").text(dat);
+}
+function err()
+{
+   $("#data").text("ファイルの取得に失敗しました。");
+}
+</script>
+</head>
+<body>
+<h1>ファイル</h1>
+<input type="button" value="読込" onclick="read()"/>
+<div id="data"></div>
+</form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>ƒTƒ“ƒvƒ‹</title>
+<script type="text/javascript">
+function init()
+{
+   var a = document.getElementById("audio");
+   a.addEventListener("ended",fin, false);
+   myform.playbtn.disabled = false;
+   myform.pausebtn.disabled = true;
+}
+function play()
+{
+   var a = document.getElementById("audio");
+   a.play();
+   myform.playbtn.disabled = true;
+   myform.pausebtn.disabled = false;
+}
+function pause()
+{
+   var a = document.getElementById("audio");
+   a.pause();
+   myform.playbtn.disabled = false;
+   myform.pausebtn.disabled = true;
+}
+function fin()
+{
+   myform.playbtn.disabled = false;
+   myform.pausebtn.disabled = true;
+}
+</script>
+</head>
+<body onload="init()">
+<h1>‰¹Šy‰ï</h1>
+<audio id="audio" src="ring.mp3"></audio>
+<form name="myform">
+<input type="button" name="playbtn" value="Ä¶" onclick="play()"/>
+<input type="button" name="pausebtn" value="’âŽ~" onclick="pause()"/>
+</form>
+</body>
+</html>

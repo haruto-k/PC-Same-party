@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>ƒTƒ“ƒvƒ‹</title>
+<script type="text/javascript">
+var i = 1;
+
+function welcome()
+{
+   var t = window.setInterval("change()", 1000);
+}
+function change()
+{
+   var elm = document.getElementById("clock");
+   var d = new Date();
+   var str = d.toLocaleTimeString();
+   elm.innerHTML = str;
+}
+</script>
+</head>
+<body onload="welcome()">
+<h2>ŽžŒv</h2>
+<h3 id="clock"></h3>
+</body>
+</html>

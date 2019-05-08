@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>ƒTƒ“ƒvƒ‹</title>
+<script type="text/javascript">
+var i = 1;
+
+function welcome()
+{
+   var t = window.setInterval("change()", 2000);
+}
+function change()
+{
+   var elm = document.getElementById("image");
+   elm.src = "car" + i + ".jpg";
+   i++;
+   if(i==4) i=1;
+}
+</script>
+</head>
+<body onload="welcome()">
+<h1>¤•i‚ÌĞ‰î</h1>
+<img id="image" src="car1.jpg"/>
+</body>
+</html>

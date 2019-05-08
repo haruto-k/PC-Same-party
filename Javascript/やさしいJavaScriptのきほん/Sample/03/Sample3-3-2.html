@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>サンプル</title>
+<script type="text/javascript">
+function welcome()
+{
+   var r = parseInt(Math.random() * 6) + 1;
+   document.pic.src = "pic" + r + ".jpg";
+}
+</script>
+</head>
+<body>
+<img src="pic0.jpg" name="pic">
+<input type="button" value="●" onclick= "welcome()"/>
+</body>
+</html>
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<cars>
+  <car>
+    <name>乗用車</name>
+    <price>150</price>
+    <description>
+    <![CDATA[ 
+       5人まで乗車することができます。
+       家族用の車です。便利&お買い得な車種。
+       <<春期バーゲン>>会場にて試乗できます。
+        ]]>
+    </description>
+  </car>
+</cars>

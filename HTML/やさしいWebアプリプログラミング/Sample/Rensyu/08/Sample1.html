@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>サンプル</title>
+<script type="text/javascript">
+function check()
+{
+   var p = new RegExp("^[0-9a-zA-Z_\.-]+@[0-9a-zA-Z_\.-]+\.[a-zA-Z]+$", "i");
+   var s = myform.hello.value;  
+   var res = s.match(p);  
+
+  if(res == null){
+    window.alert("入力が誤っています。");
+     res =  false;
+   }
+   else{
+      window.alert("送信しました。");
+      res = true;
+   }
+   return res;
+}
+</script>
+</head>
+<body>
+<h3>メールアドレス</h3>
+<form name="myform" onsubmit="return check()">
+<input type="text" name ="hello"/>
+<input type="submit" value="送信"/>
+</form>
+</body>
+</html>

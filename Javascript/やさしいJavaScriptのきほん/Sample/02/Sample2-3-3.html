@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>サンプル</title>
+</head>
+<body>
+<script type="text/javascript">
+var d = new Date();
+var day = d.getDay();
+switch(day){
+   case 0:
+   case 6: 
+      document.writeln('<img src="hday.jpg">');
+      break;
+   default:
+      document.writeln('<img src="wday.jpg">');
+}
+</script>
+</body>
+</html>

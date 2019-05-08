@@ -1,0 +1,14 @@
+﻿body{
+   background-color: #000000;
+   color: #FFFFFF;
+   font-family: fantasy;
+   background-image: url(title.jpg); 
+   background-repeat: repeat-x;
+}
+h1{
+   font-size: 2em;
+   font-family: fantasy;
+}
+nav{
+   color: #FFFFF0;
+}

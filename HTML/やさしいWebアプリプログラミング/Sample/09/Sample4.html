@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>サンプル</title>
+<script type="text/javascript">
+function add()
+{
+   var cars = document.getElementById("cars");
+   var elm = document.createElement("h3");
+   var txt = document.createTextNode("乗用車");
+   elm.appendChild(txt);    
+   cars.appendChild(elm);
+}
+</script>
+</head>
+<body>
+<h1>商品の紹介</h1>
+<input type="button" value="商品の追加" onclick="add()"/>
+<div id="cars"></div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>サンプル</title>
+<script type="text/javascript">
+var rq;
+
+function read()
+{
+   rq = new XMLHttpRequest();
+   rq.open("GET", "Sample.txt");  
+   rq.onreadystatechange = receive;
+   rq.send(null);
+}
+function receive()
+{
+   if(rq.readyState == 4){
+      var elm = document.getElementById("data");
+      if(rq.status == 200){
+        elm.innerHTML = rq.responseText;
+      }
+   }
+}
+</script>
+</head>
+<body>
+<h1>ファイル</h1>
+<input type="button" value="読込" onclick="read()"/>
+<div id="data"></div>
+</form>
+</body>
+</html>

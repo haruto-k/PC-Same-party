@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+
+<!DOCTYPE cars[
+  <!ELEMENT cars  (car)>
+  <!ELEMENT car   (name, price)>
+  <!ELEMENT name  (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+]>
+
+<cars>
+  <car>
+    <name>乗用車</name>
+    <price>150</price>
+  </car>
+</cars>

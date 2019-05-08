@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>サンプル</title>
+<script type="text/javascript">
+function change()
+{
+   var elm = document.getElementById("image");
+   var str = elm.getAttribute("src");
+   window.alert(str + "を変更します。");
+   elm.setAttribute("src", "car2.jpg");
+}
+</script>
+</head>
+<body>
+<h1>商品の紹介</h1>
+<input type="button" value="変更" onclick="change()"/>
+<img id="image" src="car1.jpg"/>
+</body>
+</html>

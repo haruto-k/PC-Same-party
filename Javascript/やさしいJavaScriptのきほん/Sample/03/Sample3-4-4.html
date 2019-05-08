@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>サンプル</title>
+<script type="text/javascript">
+function change(picname)
+{
+   var e =  document.getElementById("bigimage");
+   e.setAttribute("src", picname);
+}
+</script>
+</head>
+<body>
+<img id="bigimage" src="pic0.jpg">
+<img id="smallimage" src="pic0.jpg" onclick="change('pic0.jpg')">
+<img id="smallimage" src="pic1.jpg" onclick="change('pic1.jpg')">
+<img id="smallimage" src="pic2.jpg" onclick="change('pic2.jpg')">
+</body>
+</html>

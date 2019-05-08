@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>ƒTƒ“ƒvƒ‹</title>
+<script type="text/javascript">
+var rq;
+
+function read()
+{
+   rq = new XMLHttpRequest();
+   rq.open("GET", "Sample.xml");  
+   rq.onreadystatechange = receive;
+   rq.send(null);
+}
+function receive()
+{
+   if(rq.readyState == 4){
+      var elm = document.getElementById("data");
+      if(rq.status == 200){
+         var doc = rq.responseXML;
+         var list = doc.getElementsByTagName("car");
+         for(var i=0; i<list.length; i++){
+            var ch = list[i].childNodes;
+            for(var j=0; j<ch.length; j++){
+              elm.innerHTML += (ch[j].text);
+            }
+         }
+      }
+   }
+}
+</script>
+</head>
+<body>
+<h1>¤•i‚ÌĞ‰î</h1>
+<input type="button" value="“Ç" onclick="read()"/>
+<div id="data"></div>
+</body>
+</html>

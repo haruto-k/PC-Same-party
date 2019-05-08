@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="SlideShow.css">
+<title>サンプル</title>
+<script type="text/javascript">
+var k=0;
+var t=null;
+function stat()
+{
+   if(t == null)
+      t = window.setInterval("tick()", 3000);
+}
+function stop()
+{
+   window.clearInterval(t);
+   t = null;  
+}
+function tick()
+{
+   k++;
+   if(k == 15) k=0;
+   var e = document.getElementById("bigimage");
+   e.setAttribute("src", "pic" + k +".jpg");
+}
+</script>
+</head>
+<body>
+
+<div id="slideshow">
+<img id="bigimage" src="pic0.jpg">
+</div>
+
+<div id="navigation">
+<input type="button" value="●" onclick="stat()"/>
+<input type="button" value="■" onclick="stop()"/>
+</div>
+
+<div id="thumbnail">
+
+<script>
+for(var i=0; i<15; i++){
+   document.writeln('<img class="smallimage" src="pic' + i +'.jpg">');
+}
+</script>
+
+</div>
+
+</body>
+</html>

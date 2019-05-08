@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>サンプル</title>
+<script type="text/javascript">
+var c = true;
+var str = "秋物商品";
+
+function change()
+{
+   var itm = document.getElementById("shop");
+
+   if(c == true){
+      str = "春物商品";
+      c = false;
+   }
+   else{
+      str = "秋物商品";
+      c = true;
+   }
+   
+   if(itm.lastChild != null){
+       itm.removeChild(itm.lastChild);
+    }
+
+   var selm = document.createElement("select");
+   for(var i=0; i<5; i++){
+      var elm = document.createElement("option");
+      var txt = document.createTextNode(str + i);
+      elm.appendChild(txt);    
+      selm.appendChild(elm);
+   }
+   itm.appendChild(selm);
+}
+</script>
+</head>
+<body onload="change()">
+<h1>商品の紹介</h1>
+<input type="button" value="商品の変更" onclick="change()"/>
+<div id="shop"></div>
+</body>
+</html>

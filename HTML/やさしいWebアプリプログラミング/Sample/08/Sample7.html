@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>サンプル</title>
+<script type="text/javascript">
+function depart()
+{
+  for(var i=0; i<myform.place.length; i++){
+     if(myform.place[i].checked == true){
+        var p = myform.place[i].value;
+        window.alert(p + "から出発します。");
+     }
+  }
+}
+</script>
+</head>
+<body>
+<h1>出発地のご案内</h1>
+<form name="myform" action="Sample7.html">
+<input type="radio" name="place" value="東京"/>東京
+<input type="radio" name="place" value="大阪"/>大阪
+<input type="radio" name="place" value="福岡"/>福岡
+<input type="button" value="表示" onclick="depart()"/>
+</form>
+</body>
+</html>

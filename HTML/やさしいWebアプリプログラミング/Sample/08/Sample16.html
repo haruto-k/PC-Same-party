@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>サンプル</title>
+<script type="text/javascript">
+
+var ptr = ["(WEB)+", "WEB|BEW"];
+var str = ["WE", "WEB", "BEW", "WEBEW"];
+
+</script>
+
+<table border="1">
+<tr><th>パターン</th><th>文字列</th><th>マッチ</th>
+</tr>
+
+<script type="text/javascript">
+
+for(var i=0; i<ptr.length; i++){
+   for(var j=0; j<str.length; j++){
+      document.writeln("<tr><td>" + ptr[i] + "</td><td>" + str[j] + "</td>");
+      var p = new RegExp(ptr[i], "i");
+      var mt = (str[j].match(p) != null) ? "○": "×";    
+      document.writeln("<td>" + mt + "</td></tr>");
+   }
+}
+</script>
+
+</table>
+</body>
+</html>

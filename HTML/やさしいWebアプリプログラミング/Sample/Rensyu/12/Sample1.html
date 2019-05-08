@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>サンプル</title>
+</head>
+<body>
+<script type="text/javascript">
+   var a = navigator.userAgent;
+   var ios = a.indexOf("iPhone")>0 || a.indexOf("iPad")>0 || a.indexOf("iPod")>0; 
+   var android =  a.indexOf("Android")>0;
+
+if(ios == true || android == true){
+   document.writeln("<h1>店舗案内（スマートフォン）</h1>");
+}
+else{
+   document.writeln("<h1>店舗案内（PC）</h1>");
+}
+</script>
+</body>
+</html>

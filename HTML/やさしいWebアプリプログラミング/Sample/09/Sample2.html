@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>サンプル</title>
+<script type="text/javascript">
+function search()
+{
+   var list = document.getElementsByTagName("h1");
+   var str = list[0].innerHTML;
+   window.alert(str);
+}
+</script>
+</head>
+<body>
+<h1>商品の紹介</h1>
+<input type="button" value="見出しを調べる" onclick="search()"/>
+</body>
+</html>

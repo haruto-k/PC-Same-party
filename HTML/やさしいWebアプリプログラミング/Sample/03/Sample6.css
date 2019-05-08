@@ -1,0 +1,29 @@
+body{
+   background-color: #FFFFF0;
+}
+h1{
+   background-image: url(green.jpg);
+   background-color: #99CC33;
+   font-family: fantasy;
+   text-align: right;
+   width: 480px;
+   height: 100px;
+   margin: 20px;
+   padding: 5px;
+   border-style: outset;
+   border-width: 10px;
+   border-color: #333333;
+   box-shadow: gray 10px 10px 10px 10px;
+}
+h3{
+   background-color: #99CC33;
+   font-family: cursive;
+   text-align: center;
+   width: 200px;
+   margin: 20px;
+   padding: 5px;
+   border-style: dotted;
+   border-width: 5px;
+   border-color: #663300;
+   box-shadow: gray 10px 10px 10px 10px;
+}

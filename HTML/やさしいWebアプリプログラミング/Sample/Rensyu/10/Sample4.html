@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>ƒTƒ“ƒvƒ‹</title>
+<script type="text/javascript">
+var isDraw = false;
+var bx = 0;
+var by = 0;
+
+function init()
+{
+   var c = document.getElementById("canvas");
+   c.addEventListener("mousedown", begin_draw, false);
+   c.addEventListener("mouseup", end_draw, false);
+   c.addEventListener("mousemove", draw, false);
+}
+function begin_draw(e)
+{
+   isDraw = true;
+   bx = e.x;
+   by = e.y;
+}
+function end_draw()
+{
+   isDraw = false;
+}
+function draw(e)
+{
+   if(isDraw == true){
+      var c = document.getElementById("canvas");
+      var cnt = c.getContext("2d");
+
+      var x = e.x;
+      var y = e.y;
+     
+      cnt.shadowBlur = 10;
+      cnt.shadowColor = "#000000";
+      cnt.lineWidth = 20;
+      cnt.strokeStyle = "#990033";
+
+      cnt.beginPath();
+      cnt.moveTo(bx, by);
+      cnt.lineTo(x, y);
+      cnt.closePath();
+      cnt.stroke();
+      bx = x;
+      by = y;
+  }
+}
+</script>
+</head>
+<body onload="init()">
+<canvas id="canvas" width="600" height="400"></canvas>
+</body>
+</html>

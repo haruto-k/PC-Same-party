@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>サンプル</title>
+<script type="text/javascript">
+function depart()
+{
+   var p = myform.place.value;
+
+   window.alert(p + "から出発します。");
+
+}
+</script>
+</head>
+<body>
+<h1>出発地のご案内</h1>
+<form name="myform" action="Sample4.html">
+<select name ="place" size="3">
+
+<script type="text/javascript">
+var p = ["東京", "大阪", "福岡"]; 
+
+for(var i=0; i<p.length; i++){
+   document.writeln("<option>" + p[i] + "</option>");
+}
+</script>
+</select>
+<input type="button" value="表示" onclick="depart()"/>
+</form>
+</body>
+</html>

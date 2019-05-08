@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>サンプル</title>
+<script type="text/javascript">
+function calc()
+{
+   var p = myform.pencil.value;
+   var e = myform.eraser.value;
+   var sum = parseInt(p) + parseInt(e);
+        
+   var res = window.confirm("合計" + sum + "点になります。よろしいですか？");
+
+   return res;
+}
+</script>
+</head>
+<body>
+<h1>ご注文</h1>
+<form name="myform" action="Sample10.html" onsubmit= "return calc()">
+鉛筆<input type="text" name ="pencil"/>本<br/>
+消しゴム<input type="text" name ="eraser"/>個<br/>
+<input type="submit" value="送信"/>
+</form>
+</body>
+</html>

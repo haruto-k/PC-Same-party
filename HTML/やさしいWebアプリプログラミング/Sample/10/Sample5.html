@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>ÉTÉìÉvÉã</title>
+<script type="text/javascript">
+function init()
+{
+   var c = document.getElementById("canvas");
+   var cnt = c.getContext("2d");
+
+   cnt.shadowBlur = 10;
+   cnt.shadowColor = "#000000";
+
+   cnt.beginPath();
+   cnt.arc(50, 50, 30, 0, Math.PI*2, false);
+   cnt.closePath();
+   cnt.fillStyle = "#99CC33";
+   cnt.fill();
+
+   cnt.beginPath();
+   cnt.arc(150, 50, 30, 0, Math.PI*2, false);
+   cnt.closePath();
+   cnt.fillStyle = "#CC3333";
+   cnt.fill();
+
+   cnt.beginPath();
+   cnt.arc(250, 50, 30, 0, Math.PI*2, false);
+   cnt.closePath();
+   cnt.fillStyle = "#FF9900";
+   cnt.fill();
+}
+</script>
+</head>
+<body onload="init()">
+<h1>è§ïiÇÃè–âÓ</h1>
+<canvas id="canvas"></canvas>
+</body>
+</html>

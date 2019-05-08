@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:element name="cars">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="car" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="car">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="name" type="xsd:string"/>
+        <xsd:element name="price" type="xsd:decimal"/>
+        <xsd:element ref="date"/>
+        <xsd:element ref="description"/>
+        <xsd:element name="img" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="date">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="ad" type="xsd:string"/>
+        <xsd:element name="gengo" type="xsd:string"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="description">
+    <xsd:complexType  mixed="true">
+      <xsd:choice>
+        <xsd:element name="em" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+
+</xsd:schema>
+

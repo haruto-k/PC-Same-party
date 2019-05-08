@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Map.css">
+<title>サンプル</title>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false">
+</script>
+<script type="text/javascript">
+var map;
+
+function init()
+{
+   var p =  new google.maps.LatLng(0,0);
+   var opt = {
+      zoom: 3,
+      center: p,
+      mapTypeId: google.maps.MapTypeId.ROADMAP      
+   };
+   var mm = document.getElementById("mymap");
+   map = new google.maps.Map(mm, opt);
+   
+   google.maps.event.addListener(map, "click", map_click);  
+}
+function map_click(e)
+{
+   var p = e.latLng;
+   var mp = {
+      position: p,
+      map: map,
+      title: "目的地"
+   };
+   var mk = new google.maps.Marker(mp);
+}
+</script>
+</head>
+<body onload="init()">
+<div id="mymap"></div>
+</body>
+</html>

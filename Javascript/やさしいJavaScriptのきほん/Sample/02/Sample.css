@@ -1,0 +1,16 @@
+﻿body{
+   background-color: #000000;
+   color: #FFFFFF;
+   font-size: 2em;
+   font-family: fantasy;
+}
+#on{
+   background-color: #2e8b57;
+   color: #FFFFF0;
+   font-family: fantasy;
+}
+#off{
+   background-color: #000000;
+   color: #FFFFF0;
+   font-family: fantasy;
+}

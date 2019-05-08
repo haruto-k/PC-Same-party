@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>サンプル</title>
+<script type="text/javascript">
+function check()
+{
+   var d = myform.dd.value;
+   var res = window.confirm("参加予定日は" + d + "です。よろしいですか？");
+
+   return res;
+}
+</script>
+</head>
+<body>
+<h1>参加予定日</h1>
+<form name="myform">
+<input type="date" name="dd"/>
+<input type="submit" value="送信" onsubmit="return check()"/>
+</form>
+</body>
+</html>

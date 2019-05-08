@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>サンプル</title>
+<script type="text/javascript">
+var i = 0;
+function change()
+{
+   i++;
+   if(i == 7) i=0;
+   document.image.src = "pic" + i +".jpg";
+}
+</script>
+</head>
+<body>
+<img name="image" src="pic0.jpg">
+<form>
+<input type="button" value="●" onclick="change()"/>
+</form>
+</body>
+</html>

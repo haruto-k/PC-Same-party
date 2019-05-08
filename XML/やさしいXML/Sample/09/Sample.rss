@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<rss version="2.0">
+
+<channel>
+<title>XMLを学ぼう</title>
+<link>http://homepage3.nifty.com/~mana/</link>
+<description>
+XMLは汎用的に利用されるデータ形式
+</description>
+<language>ja</language>
+<pubDate>Sat, 3 Jan 2009 08:27:51 +0900</pubDate>
+<lastBuildDate>Mon, 5 Jan 2009 14:31:27 +0900</lastBuildDate>
+<item>
+
+<title>XMLとデータ</title>
+
+<link>http://homepage3.nifty.com/~mana/yasaxml.html</link>
+<description>私たちは日常生活の中で、さまざまなデータ（data）を扱っています。たとえば、企業は日々商品を製造し、販売しています。このような商品の品名や価格データは、コンピュータで管理されていることでしょう。また、顧客の名前や売上データの管理も同様にコンピュータで行われているはずです。
+XMLは、このような「データ」をあらわすために使われる仕様です。</description>
+<pubDate>Mon, 5 Jan 2009 14:31:27 +0900</pubDate>
+</item>
+
+<item>
+
+<title>HTMLとXML</title>
+
+<link>http://homepage3.nifty.com/~mana/yasaxml.html</link>
+<description>HTMLは、Webページの記述を目的とした言語です。HTMLはWebブラウザ上で文字を強調したり、段落をつけたりするタグが取り決められています。
+これに対して、XMLはデータを作成する人がタグを自由に取り決めることができるようになっています。</description>
+<pubDate>Sun, 4 Jan 2009 16:54:36 +0900</pubDate>
+</item>
+
+<item>
+<title>XML文書の作成</title>
+
+<link>http://homepage3.nifty.com/~mana/yasaxml.html</link>
+<description>XMLによってあらわしたデータは、XML文書（XML document）と呼ばれています。さっそく、XML文書を作成していくことにしましょう。
+XML文書を作成するにあたって、まず最初にするべきことは、テキストエディタにXMLの規定にしたがったデータを入力していく
+という作業です。</description>
+<pubDate>Mon, 5 Jan 2009 00:18:01 +0900</pubDate>
+</item>
+
+<item>
+<title>XML文書の内容</title>
+
+<link>http://homepage3.nifty.com/~mana/yasaxml.html</link>
+<description>XMLによってあらわしたデータは、XML文書（XML document）と呼ばれています。さっそく、XML文書を作成していくことにしましょう。
+XML文書を作成するにあたって、まず最初にするべきことは、テキストエディタにXMLの規定にしたがったデータを入力していく
+という作業です。</description>
+<pubDate>Mon, 5 Jan 2009 00:00:01 +0900</pubDate>
+</item>
+
+<item>
+<title>XMLのタグ</title>
+
+<link>http://homepage3.nifty.com/~mana/yasaxml.html</link>
+<description>XML文書では、原則として自由にタグを定義して使うことができるようになっています。このため、XMLはたいへん柔軟にデータをあらわすことができるようになっているのです。
+</description>
+<pubDate>Sun, 4 Jan 2009 08:12:46 +0900</pubDate>
+</item>
+
+</channel>
+
+</rss>

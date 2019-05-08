@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+<link rel="stylesheet" href="Sample.css">
+<title>ƒTƒ“ƒvƒ‹</title>
+<script type="text/javascript">
+var isDraw = false;
+var bx = 0;
+var by = 0;
+
+function init()
+{
+   var c = document.getElementById("canvas");
+   c.addEventListener("touchstart", begin_draw, false);
+   c.addEventListener("touchend", end_draw, false);
+   c.addEventListener("touchmove", draw, false);
+}
+function begin_draw(e)
+{
+   isDraw = true;
+   bx = e.touches[0].clientX;
+   by = e.touches[0].clientY;
+}
+function end_draw()
+{
+   isDraw = false;
+}
+function draw(e)
+{
+   if(isDraw == true){
+      var c = document.getElementById("canvas");
+      var cnt = c.getContext("2d");
+
+      var x = e.touches[0].clientX;
+      var y = e.touches[0].clientY;
+     
+      cnt.shadowBlur = 10;
+      cnt.shadowColor = "#000000";
+      cnt.lineWidth = 5;
+      cnt.strokeStyle = "#000000";
+
+      cnt.beginPath();
+      cnt.moveTo(bx, by);
+      cnt.lineTo(x, y);
+      cnt.closePath();
+      cnt.stroke();
+      bx = x;
+      by = y;
+  }
+}
+</script>
+</head>
+<body onload="init()">
+<canvas id="canvas" width="600" height="400"></canvas>
+</body>
+</html>

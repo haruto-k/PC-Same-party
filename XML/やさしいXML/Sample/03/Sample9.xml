@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+
+<!DOCTYPE cars SYSTEM "Sample.dtd">
+
+<cars>
+  <car>
+    <name>ワゴン</name>
+    <price>180</price>
+  </car>
+</cars>

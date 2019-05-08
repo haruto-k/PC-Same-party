@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+
+<sale xmlns:A="http://softbankcr.co.jp/ACompany"
+      xmlns:B="http://softbankcr.co.jp/BCompany">
+  <A:car>
+    <A:name>乗用車</A:name>
+    <A:price>150</A:price>
+  </A:car>
+  <B:name>
+     タクシー社
+  </B:name>
+  <amount>2</amount>
+</sale>

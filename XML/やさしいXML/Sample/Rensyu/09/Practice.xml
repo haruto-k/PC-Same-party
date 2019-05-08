@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<books>
+  <book>
+    <title>入門SQL</title>
+    <price>2400</price>
+  </book>
+  <book>
+    <title>やさしいC++</title>
+    <price>2500</price>
+  </book>
+  <book>
+    <title>やさしいJava</title>
+    <price>2600</price>
+  </book>
+</books>

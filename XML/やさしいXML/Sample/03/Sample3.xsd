@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:element name="cars">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="car" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="car">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="name" type="xsd:string"/>
+        <xsd:element name="price" type="xsd:decimal"/>
+      </xsd:sequence>
+      <xsd:attribute name="id" type="xsd:decimal" use="required"/>
+      <xsd:attribute name="country" type="xsd:string" default="日本"/>
+    </xsd:complexType>
+  </xsd:element>
+
+</xsd:schema>

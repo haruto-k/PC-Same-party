@@ -1,0 +1,20 @@
+cars{
+    display:block;
+    width:230pt;
+    height:220pt;
+    background-color:rgb(200,200,200);
+    padding:18pt;
+    font-weight:bold;
+    font-size:18pt;
+    text-align:left;
+}
+car{
+    display:block;
+    width:180pt;
+    height:30pt;
+    background-image:url(car.gif);
+    padding:18pt;
+    font-weight:normal;
+    font-size:12pt;
+    text-align:center;
+}

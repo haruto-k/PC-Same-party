@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Form.css">
+<title>サンプル</title>
+<script type="text/javascript">
+function check()
+{
+   var p = new RegExp("^[0-9]{3}-[0-9]{4}$", "i");
+   var s = myform.address.value;  
+   var res = s.match(p);  
+
+  if(res == null){
+    window.alert("入力が誤っています。");
+     res =  false;
+   }
+   else{
+      window.alert("送信しました。");
+      res = true;
+   }
+   return res;
+}
+</script>
+</head>
+<form name="myform" action="Sample4-2-2.html" onsubmit="return check()">
+<table>
+<tr>
+<td>郵便番号</td>
+<td><input type="text" name ="address"/></td>
+</tr>
+</table>
+<input type="submit" value="送信"/>
+</form>
+</body>
+</html>
+

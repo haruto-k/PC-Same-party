@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>ƒTƒ“ƒvƒ‹</title>
+<script type="text/javascript">
+function welcome()
+{
+   var elm = document.getElementById("description");
+   var img =  document.getElementById("image");
+   elm.innerHTML = "<h1>" + img.src + "</h1>";
+}
+function bye()
+{
+   var e = document.getElementById("description");
+   e.innerHTML = "";
+}
+</script>
+</head>
+<body>
+<h1>¤•i‚ÌĞ‰î</h1>
+<img src="car1.jpg" id="image" onmouseover="welcome()" onmouseout="bye()"/>
+<p id="description"></p>
+</body>
+</html>

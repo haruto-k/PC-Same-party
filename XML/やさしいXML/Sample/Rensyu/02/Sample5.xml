@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="Shift_JIS" ?> 
+<list>
+  <person>
+    <name>鈴木忍</name>
+    <age>28</age> 
+    <address>
+      <email>aaa@softbankcr.co.jp</email>
+      <mailing>港区赤坂4-13-13</mailing>
+    </address>
+  </person>
+  <person>
+    <name>佐藤太一</name>
+    <age>45</age> 
+    <address>
+      <email>bbb@softbankcr.co.jp</email>
+      <mailing>港区赤坂4-13-13</mailing>
+    </address>
+  </person>
+</list>

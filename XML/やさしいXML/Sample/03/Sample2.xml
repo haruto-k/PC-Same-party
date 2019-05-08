@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+
+<!DOCTYPE cars[
+  <!ELEMENT cars  (car)>
+  <!ELEMENT car   (name, price, date)>
+  <!ELEMENT name  (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+  <!ELEMENT date  (ad | gengo)>
+  <!ELEMENT ad    (#PCDATA)>
+  <!ELEMENT gengo (#PCDATA)>
+]>
+
+<cars>
+  <car>
+    <name>乗用車</name>
+    <price>150</price>
+    <date>
+      <ad>2009-03-01</ad>
+    </date>
+  </car>
+</cars>

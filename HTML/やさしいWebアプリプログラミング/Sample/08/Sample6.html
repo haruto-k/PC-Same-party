@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample.css">
+<title>サンプル</title>
+<script type="text/javascript">
+function buy()
+{
+   var c = myform.wrap.checked;
+
+   if(c == true){
+       window.alert("贈答用です。");
+   }
+   else{
+       window.alert("ご自宅用です。");
+   }
+}
+</script>
+</head>
+<body>
+<h1>商品のご注文</h1>
+<form name="myform" action="Sample6.html">
+<input type="checkbox" name="wrap" >贈答用
+<input type="button" value="表示" onclick="buy()"/>
+</form>
+</body>
+</html>

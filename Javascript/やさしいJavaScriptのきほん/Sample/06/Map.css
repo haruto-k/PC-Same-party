@@ -1,0 +1,11 @@
+﻿body{
+   background-color: #000000;
+}
+h3{
+   background-color: #000000;
+   color: #FFFFFF;
+}
+#mymap{
+   width: 600px;
+   height: 400px;  
+}

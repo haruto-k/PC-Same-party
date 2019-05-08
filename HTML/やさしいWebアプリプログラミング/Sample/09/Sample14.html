@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" href="Sample13.css">
+<title>ƒTƒ“ƒvƒ‹</title>
+<script type="text/javascript">
+function init()
+{
+   var h = document.getElementById("heading");
+   h.addEventListener("mouseover", welcome, false);
+   h.addEventListener("mouseout", bye, false);
+}
+function welcome()
+{
+   this.className = "after";
+}
+function bye()
+{
+   this.className = "before";
+}
+</script>
+</head>
+<body onload="init()">
+<h1 id="heading">¤•i‚ÌĞ‰î</h1>
+</body>
+</html>

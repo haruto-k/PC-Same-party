@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="Shift_JIS" ?> 
+
+<!DOCTYPE books SYSTEM "Sample.dtd">
+
+<books>
+  <book>
+    <title>やさしいXML</title> 
+    <price>330</price> 
+    <caption>
+      とてもやさしい<em>XML</em>です。 
+    </caption>
+  </book>
+  <book>
+    <title>やさしいJava</title> 
+    <price>200</price> 
+    <caption>
+      とてもやさしい<em>Java</em>です。 
+    </caption>
+  </book>
+</books>
